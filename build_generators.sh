@@ -4,11 +4,11 @@
 ./build_genie.sh
 
 # GiBUU 2023 patch 1
-./build_gibuu.sh
+#./build_gibuu.sh
 
 # Private repo, teh code will be using my own neut build
 #./build_neut.sh
-./build_nuwro.sh
+#./build_nuwro.sh
 #./build_marley.sh
 
 ./build_nuisance.sh

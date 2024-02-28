@@ -4,7 +4,7 @@ write_genie_env_script() {
 cat > ./genie_env.sh << 'EOF'
 #!/bin/bash
 
-source ../global_vars.sh
+source ../../global_vars.sh
 echo "Setting GENIE environment variables..."
 
 # Finds the directory where this script is located. This method isn't
@@ -46,6 +46,8 @@ source ../genie_env.sh
 EOF
 }
 
+mkdir genie
+cd genie
 git clone https://github.com/GENIE-MC/Generator.git
 git clone https://github.com/GENIE-MC/Reweight.git
 write_genie_env_script
@@ -57,5 +59,5 @@ make -j4
 cd ../Reweight
 git checkout -b v1.2.0 R-1_02_00
 make -j4
-cd ..
+cd ../../
 echo "DONE!"
