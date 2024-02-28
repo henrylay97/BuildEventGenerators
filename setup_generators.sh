@@ -19,7 +19,7 @@ export GENIE_REWEIGHT=${BASE_DIR}/genie/Reweight
 export PATH=${GENIE}/bin:${GENIE_REWEIGHT}/bin:$PATH
 export LD_LIBRARY_PATH=${GENIE}/lib:${GENIE_REWEIGHT}/lib:${LD_LIBRARY_PATH}
 export LIBRARY_PATH=${LIBRARY_PATH}:${GENIE_REWEIGHT}/lib
-echo "GENIE setup is ready!"
+#echo "GENIE setup is ready!"
 
 # Set up GiBUU (run via the "gibuu" symbolic link to GiBUU.x)
 # GiBUU 2023
