@@ -1,6 +1,11 @@
-export FLUX_DIR=/exp/sbnd/data/users/hlay/ncpizero/plots/NCPiZeroAv16/flux_hists
-export SAVE_DIR=/exp/sbnd/data/users/hlay/ncpizero/generators/genie
+export VERSION=NCPiZeroBv1
+export HIST_VERSION=_eff_z
+
+export FLUX_DIR=/exp/sbnd/data/users/hlay/ncpizero/plots/$VERSION/flux_hists$HIST_VERSION
+export SAVE_DIR=/exp/sbnd/data/users/hlay/ncpizero/generators/genie/$VERSION
 export NEVTS=5000000
+
+mkdir -p $SAVE_DIR
 
 source /exp/sbnd/app/users/hlay/generators/BuildEventGenerators/setup_generators.sh
 
